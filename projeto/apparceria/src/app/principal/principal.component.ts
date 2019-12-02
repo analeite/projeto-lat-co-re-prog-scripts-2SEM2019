@@ -9,5 +9,10 @@ import { ServicoService } from '../servico.service';
 export class PrincipalComponent implements OnInit {
   constructor(private servico: ServicoService) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    // $('#carouselSite').on('slide.bs.carousel', function () {
+    //   // Faça algo...
+    // })
+
+  }
 }

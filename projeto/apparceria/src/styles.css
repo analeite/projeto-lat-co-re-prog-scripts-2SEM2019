@@ -1,2 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+
 @import '~bootstrap/dist/css/bootstrap.min.css';
+.navbar {
+    height: 60px;
+    background-color: #062659;
+}
+
+.link {
+    margin-bottom: 35px;
+    color: #FFFFFF;
+}
+
+nav a:hover {
+    color: #E6E6E6;
+}
+
+.imagem {
+    margin-top: -10px;
+    margin-left: -20px;
+}
+
+.fundo {
+    background-image: url('assets/imagens/fundo.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    position: absolute;
+    background-attachment: fixed;
+    right: 0;
+    text-align: center;
+    top: 0;
+    background-size: cover;
+}

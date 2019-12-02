@@ -1,6 +1,6 @@
-<div class="container-fluid back">
+<div class="container-fluid">
 
-    <div id="carouselSite" class="carousel slide" data-ride="carousel">
+    <!-- <div id="carouselSite" class="carousel slide" data-ride="carousel">
 
         <ol class="carousel-indicators">
             <li data-target="#carouselSite" data-slide-to="0" class="active"></li>
@@ -16,7 +16,7 @@
             <li data-target="#carouselSite" data-slide-to="10"></li>
             <li data-target="#carouselSite" data-slide-to="11"></li>
         </ol>
-
+        <br><br>
         <div class="carousel-inner" role="listbox" style="height: 205px">
             <div class="carousel-item active">
                 <img src="assets/imagens/CF-1.png" class="img-fluid d-block">
@@ -125,8 +125,9 @@
             <span class="sr-only">Avançar</span>
         </a>
 
-    </div>
-    <!-- <div class="row text-center font-weight-bold">
+    </div> -->
+    <br>
+    <div class="row text-center font-weight-bold">
         <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2 p-0">
             <div>CF-1</div>
             <img src="assets/imagens/CF-1.png" (click)="servico.getLinhaGroupByPosto('CF-1')" class="produto">
@@ -145,51 +146,53 @@
         </div>
         <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2 p-0">
             <div>Porta Pax Dian.</div>
-            <img src="assets/imagens/Porta Pax Dian.png" (click)="servico.getLinhaGroupByPosto('Porta Pax Dian.')"
-                class="produto">
+            <img src="assets/imagens/Porta Pax Dian.png" (click)="servico.getLinhaGroupByPosto('Porta Pax Dian.')" class="produto">
         </div>
         <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2 p-0">
             <div>Porta Pax Tras.</div>
-            <img src="assets/imagens/Porta Pax Tras.png" (click)="servico.getLinhaGroupByPosto('Porta Pax Tras.')"
-                class="produto">
+            <img src="assets/imagens/Porta Pax Tras.png" (click)="servico.getLinhaGroupByPosto('Porta Pax Tras.')" class="produto">
         </div>
         <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2 p-0">
             <div>Porta Serv. Dian.</div>
-            <img src="assets/imagens/Porta Serv Dian.png" (click)="servico.getLinhaGroupByPosto('Porta Serv. Dian.')"
-                class="produto">
+            <img src="assets/imagens/Porta Serv Dian.png" (click)="servico.getLinhaGroupByPosto('Porta Serv. Dian.')" class="produto">
         </div>
         <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2 p-0">
             <div>Porta Serv. Tras.</div>
-            <img src="assets/imagens/Porta Serv Tras.png" (click)="servico.getLinhaGroupByPosto('Porta Serv.Tras.')"
-                class="produto">
+            <img src="assets/imagens/Porta Serv Tras.png" (click)="servico.getLinhaGroupByPosto('Porta Serv.Tras.')" class="produto">
         </div>
         <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2 p-0">
             <div>Porta Bag. Dian. E1</div>
-            <img src="assets/imagens/Porta Bag Dian E1 e E2.png"
-                (click)="servico.getLinhaGroupByPosto('Porta Bagag. Diant.E1')" class="produto">
+            <img src="assets/imagens/Porta Bag Dian E1 e E2.png" (click)="servico.getLinhaGroupByPosto('Porta Bagag. Diant.E1')" class="produto">
         </div>
         <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2 p-0">
             <div>Porta Bag. Tras. E1</div>
-            <img src="assets/imagens/Porta Bag Tras E1 e E2.png"
-                (click)="servico.getLinhaGroupByPosto('Porta Bagag. Tras.E1')" class="produto">
+            <img src="assets/imagens/Porta Bag Tras E1 e E2.png" (click)="servico.getLinhaGroupByPosto('Porta Bagag. Tras.E1')" class="produto">
         </div>
         <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2 p-0">
             <div>Porta Bag. Dian. E2</div>
-            <img src="assets/imagens/Porta Bag Dian E1 e E2.png"
-                (click)="servico.getLinhaGroupByPosto('Porta Bagag. Diant.E2')" class="produto">
+            <img src="assets/imagens/Porta Bag Dian E1 e E2.png" (click)="servico.getLinhaGroupByPosto('Porta Bagag. Diant.E2')" class="produto">
         </div>
         <div class="col-6 col-sm-4 col-md-4 col-lg-3 col-xl-2 p-0">
             <div>Porta Bag. Tras. E2</div>
-            <img src="assets/imagens/Porta Bag Tras E1 e E2.png"
-                (click)="servico.getLinhaGroupByPosto('Porta Bagag. Tras.E2')" class="produto">
+            <img src="assets/imagens/Porta Bag Tras E1 e E2.png" (click)="servico.getLinhaGroupByPosto('Porta Bagag. Tras.E2')" class="produto">
+        </div>
+    </div>
+    <!-- 
+    <div class="row mt-4">
+        <div class="form-group ml-3">
+            <label>Postos da linha <span class="font-weight-bold">{{servico.linha}}</span>:</label>
+            <select class="form-control" (change)="servico.getLinhaRangeGroupByPosto($event.target.value)">
+                <option></option>
+                <option (click)="servico.getLinhaGroupByPosto('Porta Bagag. Tras.E2')">Porta E2</option>
+            </select>
         </div>
     </div> -->
+
     <div class="row mt-4 alinhamento">
         <div class='col-12'>Postos da linha <span class="font-weight-bold">{{servico.linha}}</span>:</div>
         <div class="d-flex ml-3 mr-3" *ngFor="let posto of servico.postoPorLinha$ | async">
             <div>
-                <div class="bd-highlight p-2 mr-1 mt-2 card text-center font-weight-bold alinhamento"
-                    [ngClass]="{'border-primary text-primary': posto.avg_fimreal_fimplan > 0, 'border-danger text-danger': posto.avg_fimreal_fimplan < 0, 'border-success text-success': posto.avg_fimreal_fimplan == 0}">
+                <div class="bd-highlight p-2 mr-1 mt-2 card text-center font-weight-bold alinhamento" [ngClass]="{'border-primary text-primary': posto.avg_fimreal_fimplan > 0, 'border-danger text-danger': posto.avg_fimreal_fimplan < 0, 'border-success text-success': posto.avg_fimreal_fimplan == 0}">
                     {{posto.posto}}</div>
                 <div>Média: {{posto.avg_fimreal_fimplan}}</div>
                 <div>Total: {{posto.sum_fimreal_fimplan}}</div>
@@ -199,19 +202,17 @@
     <div class="row mt-4">
         <div class="form-group ml-3">
             <label>Ranges da linha <span class="font-weight-bold">{{servico.linha}}</span>:</label>
-            <select class="form-control" (change)="servico.getLinhaRangeGroupByPosto($event.target.value)">
+            <select class="form-control">
                 <option></option>
                 <option *ngFor="let range of servico.rangePorLinha$ | async">{{range.range}}</option>
             </select>
         </div>
     </div>
     <div class="row mt-4" *ngIf="servico.range != ''">
-        <div class='col-12'>Postos da linha <span class="font-weight-bold">{{servico.linha}}</span> e range <span
-                class="font-weight-bold">{{servico.range}}</span>:</div>
+        <div class='col-12'>Postos da linha <span class="font-weight-bold">{{servico.linha}}</span> e range <span class="font-weight-bold">{{servico.range}}</span>:</div>
         <div class="d-flex ml-3 mr-3" *ngFor="let posto of servico.postoPorLinhaRange$ | async">
             <div>
-                <div class="bd-highlight p-2 mr-1 mt-2"
-                    [ngClass]="{'bg-primary': posto.avg_fimreal_fimplan > 0, 'bg-danger': posto.avg_fimreal_fimplan < 0, 'bg-success': posto.avg_fimreal_fimplan == 0}">
+                <div class="bd-highlight p-2 mr-1 mt-2" [ngClass]="{'bg-primary': posto.avg_fimreal_fimplan > 0, 'bg-danger': posto.avg_fimreal_fimplan < 0, 'bg-success': posto.avg_fimreal_fimplan == 0}">
                     {{posto.posto}}</div>
                 <div>Média: {{posto.avg_fimreal_fimplan}}</div>
                 <div>Total: {{posto.sum_fimreal_fimplan}}</div>

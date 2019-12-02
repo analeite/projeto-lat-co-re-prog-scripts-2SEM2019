@@ -1,25 +1,27 @@
-.produto:hover {cursor:pointer}
+.produto:hover {
+    cursor: pointer
+}
 
-.alinhamento{
+.alinhamento {
     justify-content: space-between;
     padding: 10px;
 }
 
-/* .back{
+.back {
     background-color: black;
-} */
+}
 
-.centro{
+.centro {
     align-content: center;
 }
 
 .carousel-inner img {
     margin: auto;
-    /* height: 260px;
-    width: 230px;   */
-  }
+}
 
-  /* .slider{
+.slider {
     height: 400px;
     overflow: hidden;
-  } */
+    height: 260px;
+    width: 230px;
+}
