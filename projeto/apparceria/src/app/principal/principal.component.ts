@@ -10,9 +10,19 @@ export class PrincipalComponent implements OnInit {
   constructor(private servico: ServicoService) { }
 
   ngOnInit() {
-    // $('#carouselSite').on('slide.bs.carousel', function () {
-    //   // Faça algo...
-    // })
-
   }
+  // public myInterval: number = 1500;
+  // private _activeSlideIndex: number;
+
+  // get activeSlideIndex(): number {
+  //   return this._activeSlideIndex;
+  // };
+
+  // set activeSlideIndex(newIndex: number) {
+  //   if (this._activeSlideIndex !== newIndex) {
+  //     console.log('Active slider index would be changed!');
+  //     // here's the place for your "slide.bs.carousel" logic
+  //   }
+  //   this._activeSlideIndex = newIndex;
+  // };
 }
