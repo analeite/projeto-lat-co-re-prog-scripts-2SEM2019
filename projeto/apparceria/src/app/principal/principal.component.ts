@@ -7,7 +7,20 @@ import { ServicoService } from '../servico.service';
   styleUrls: ['./principal.component.css']
 })
 export class PrincipalComponent implements OnInit {
-  constructor(private servico: ServicoService) { }
+  constructor(private servico: ServicoService) { 
+    window["modoTV"] = false;
+    setInterval(()=>{
+        if (window["modoTV"]){
+            let posto = (<HTMLSelectElement> document.getElementById('postoSelect'));
+            let postoValor = posto.value;
+            servico.getLinhaGroupByPosto(servico.linha); // atualiza linha
+            setTimeout(()=>{
+              posto.value = postoValor;
+              servico.getLinhaRangeGroupByPosto(postoValor) // atualiza range
+            }, 100);
+        }
+    }, 30*1000); // 30s de delay
+  }
 
   ngOnInit() {
   }
