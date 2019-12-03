@@ -23,6 +23,7 @@ nav a:hover {
 .fundo {
     background-image: url('assets/imagens/fundo.png');
     background-repeat: no-repeat;
+    background-position: center center;
     background-size: 100%;
     bottom: 0;
     left: 0;
