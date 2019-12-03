@@ -8,7 +8,7 @@ import { ServicoService } from '../servico.service';
 })
 export class PrincipalComponent implements OnInit {
   constructor(private servico: ServicoService) { 
-    window["modoTV"] = false;
+    window["modoTV"] = true;
     setInterval(()=>{
         if (window["modoTV"]){
             let posto = (<HTMLSelectElement> document.getElementById('postoSelect'));
@@ -17,9 +17,9 @@ export class PrincipalComponent implements OnInit {
             setTimeout(()=>{
               posto.value = postoValor;
               servico.getLinhaRangeGroupByPosto(postoValor) // atualiza range
-            }, 100);
+            }, 1*25);
         }
-    }, 30*1000); // 30s de delay
+    }, 1*4000); // 30s de delay
   }
 
   ngOnInit() {
