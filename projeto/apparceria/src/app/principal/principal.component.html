@@ -196,7 +196,7 @@
             </div>
         </div> -->
 
-        <div class="row mt-4" style="margin-left: 14%;">
+        <div class="row mt-4">
             <div class="form-group ml-3">
                 <label>Ranges da linha <span class="font-weight-bold">{{servico.linha}}</span>:</label>
                 <select class="form-control" id="postoSelect" (change)="servico.getLinhaRangeGroupByPosto($event.target.value)" onchange="setTimeout(()=>document.getElementById('postos').scrollIntoView(), 200)">
